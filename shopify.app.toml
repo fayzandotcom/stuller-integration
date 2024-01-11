@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "stuller-integration"
+client_id = "6acba2b6ed687529a701a977c1846dd4"
+application_url = "https://vegetation-penalty-yahoo-lift.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://vegetation-penalty-yahoo-lift.trycloudflare.com/auth/callback",
+  "https://vegetation-penalty-yahoo-lift.trycloudflare.com/auth/shopify/callback",
+  "https://vegetation-penalty-yahoo-lift.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "techcure-jewelry-dev.myshopify.com"
